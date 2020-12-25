@@ -10,7 +10,6 @@ class App extends Component {
     super(props);
 
     this.state = {
-      //mode: 'welcome',
       mode: 'read',
       subject:{title:'WEB', sub:'World Wide Web!'},
 
@@ -21,7 +20,6 @@ class App extends Component {
         {id: 3, title : 'JAvaScrip', desc: 'JavaScript is for interactive'}
       ]
     }
-
   }
 
   render(){
@@ -36,26 +34,32 @@ class App extends Component {
       _title = this.state.contents[0].title;
       _desc = this.state.contents[0].desc;
     }
+
+
     return (
       <div className="App">
-        {/* <Subject 
+        <Subject 
           title={this.state.subject.title} 
-          sub={this.state.subject.sub}>
-        </Subject> */}
-        <header>
-          <h1><a href="/" onClick={function(e){
-              //console.log(e);
-              e.preventDefault();
-              this.state.mode = 'welcome' // doesn't work
+          sub={this.state.subject.sub}
+
+          onChangePage={function() {
               this.setState({
                 mode:'welcome'
               })
-            }.bind(this)}>{this.state.subject.title}</a>
-          </h1>
-          {this.state.subject.sub}
-        </header>
+            }.bind(this)}
+          >
+        </Subject>
 
-        <TOC data = {this.state.contents}></TOC>
+        <TOC 
+          data = {this.state.contents}
+          onChangePage={function() {
+            this.setState({
+              mode:'read'
+            })
+          }.bind(this)}
+        ></TOC>
+
+
         <Content title={_title} desc={_desc}></Content>
       </div>
     );
