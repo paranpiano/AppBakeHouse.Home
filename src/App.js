@@ -44,10 +44,13 @@ class App extends Component {
         </Subject> */}
         <header>
           <h1><a href="/" onClick={function(e){
-              console.log(e);
+              //console.log(e);
               e.preventDefault();
-              debugger;
-            }}>{this.state.subject.title}</a>
+              this.state.mode = 'welcome' // doesn't work
+              this.setState({
+                mode:'welcome'
+              })
+            }.bind(this)}>{this.state.subject.title}</a>
           </h1>
           {this.state.subject.sub}
         </header>
