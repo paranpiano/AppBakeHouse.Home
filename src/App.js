@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import { Navbar, Nav } from 'react-bootstrap';
 
-import Home from './components/Home';
-import About from './components/About';
-import Client from './components/Client';
-import Services from './components/Services';
-import Portfolio from './components/Portfolio';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Client from './components/pages/Client';
+import Services from './components/pages/Services';
+import Portfolio from './components/pages/Portfolio';
 
 import './App.css';
 
