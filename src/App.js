@@ -9,7 +9,7 @@ import './App.css';
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className="App">
         <nav>
           <ul>
             <li>
@@ -20,15 +20,16 @@ const App = () => {
             </li>
           </ul>
         </nav>
-
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
+        <main>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </main>
       </div>
     </Router>
   );
