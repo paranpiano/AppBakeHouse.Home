@@ -52,22 +52,26 @@ class App extends Component {
           title={this.state.subject.title} 
           sub={this.state.subject.sub}
 
-          onChangePage={function() {
-              this.setState({
-                mode:'welcome'
-              })
-            }.bind(this)}
+          // onChangePage={function(){
+          //     this.setState({
+          //       mode:'welcome'
+          //     })
+          //   }.bind(this)}
+
+            onChangePage={() =>{ this.setState({ mode: 'welcome'})}}
           >
+
+          
         </Subject>
 
         <TOC 
           data = {this.state.contents}
-          onChangePage={function(id) {
+          onChangePage={(id) =>  {
               this.setState({
               mode:'read',
               selected_content_id : Number(id),
             })
-          }.bind(this)}
+          }}
         ></TOC>
 
 
