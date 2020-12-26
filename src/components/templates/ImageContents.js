@@ -1,7 +1,11 @@
 import './ImageContents.css';
 
 const ImageContents = (props) => {
-  const { imageSrc, imageText, children } = props;
+  const {
+    imageSrc,
+    imageText,
+    children, // <ImageContents> children </ImageContents>
+  } = props;
 
   const styles = {
     backgroundImage: `url(${imageSrc})`,
