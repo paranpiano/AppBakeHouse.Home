@@ -1,12 +1,8 @@
 import ImageContents from '../templates/ImageContents';
+import imagePath from '../../images/about.jpg';
 
 const About = () => {
-  return (
-    <ImageContents
-      imageSrc="https://appbakehouse.com/images/aboutus.jpg"
-      imageText="About"
-    ></ImageContents>
-  );
+  return <ImageContents imageSrc={imagePath} imageText="About Us" />;
 };
 
 export default About;

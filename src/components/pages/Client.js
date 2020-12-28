@@ -2,6 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 import ImageContents from '../templates/ImageContents';
+import imagePath from '../../images/client.jpg';
 
 const Client = () => {
   const [client, setClient] = useState([]);
@@ -25,7 +26,7 @@ const Client = () => {
   };
 
   return (
-    <ImageContents imageSrc="https://appbakehouse.com/images/portfolio.jpg" imageText="Client">
+    <ImageContents imageSrc={imagePath} imageText="Client">
       <div>
         <p onClick={getClient}>getClients</p>
         <p onClick={deleteClient}>deleteClients</p>
