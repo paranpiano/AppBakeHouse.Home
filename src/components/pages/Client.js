@@ -26,8 +26,8 @@ const Client = () => {
   };
 
   return (
-    <ImageContents imageSrc={imagePath} imageText="Client">
-      <div>
+    <ImageContents imageSrc={imagePath} imageText="Clients">
+      {/* <div>
         <p onClick={getClient}>getClients</p>
         <p onClick={deleteClient}>deleteClients</p>
         <ul>
@@ -35,6 +35,10 @@ const Client = () => {
             <li>{user.name}</li>
           ))}
         </ul>
+      </div> */}
+      <div className="post">
+        <h2>Business To Business</h2>
+        <h2>Business To Customer</h2>
       </div>
     </ImageContents>
   );
