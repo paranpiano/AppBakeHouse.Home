@@ -1,6 +1,7 @@
 import ImageContents from '../templates/ImageContents';
 import imagePath from '../../images/about.jpg';
 import './Pages.css';
+import { Container } from 'react-bootstrap';
 
 const About = () => {
   return (

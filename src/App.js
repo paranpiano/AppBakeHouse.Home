@@ -1,13 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Client from './components/pages/Client';
 import Services from './components/pages/Services';
 import Portfolio from './components/pages/Portfolio';
+import Footer from './Footer';
 
 import './App.css';
 import imagePath from './logo.png';
@@ -60,6 +61,10 @@ const App = () => {
           </Route>
         </Switch>
       </main>
+
+      <NavItem>
+        <Footer />
+      </NavItem>
     </Router>
   );
 };
