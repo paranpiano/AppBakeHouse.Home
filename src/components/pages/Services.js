@@ -18,7 +18,7 @@ const Services = () => {
           </a>
         </h4>
 
-        <h2>Machine Learning Service</h2>
+        <h2>Machine Learning Services</h2>
         <h4>
           <a href="https://play.google.com/store/apps/details?id=com.appbakehouse.qr_scan_app">
             QR Predtion Service
