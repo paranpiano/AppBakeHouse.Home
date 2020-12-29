@@ -10,13 +10,17 @@ import Services from './components/pages/Services';
 import Portfolio from './components/pages/Portfolio';
 
 import './App.css';
+import imagePath from './logo.png';
 
 const App = () => {
   return (
     <Router>
       <Navbar bg="dark" variant="dark" expand="lg">
         <Navbar.Brand as={Link} to="/">
-          App BakeHouse
+          <a href="#">
+            <img src={imagePath} weign="40" height="40" />
+            &nbsp;&nbsp;APP BAKEHOUSE
+          </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
