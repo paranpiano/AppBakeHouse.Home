@@ -3,11 +3,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
-import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Client from './components/pages/Client';
 import Services from './components/pages/Services';
-import Portfolio from './components/pages/Portfolio';
 import Footer from './Footer';
 
 import './App.css';
@@ -35,9 +33,6 @@ const App = () => {
             <Nav.Link as={Link} to="/services">
               Services
             </Nav.Link>
-            <Nav.Link as={Link} to="/portfolio">
-              Portfolio
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -45,7 +40,7 @@ const App = () => {
       <main>
         <Switch>
           <Route exact path="/">
-            <Home />
+            <About />
           </Route>
           <Route path="/about">
             <About />
@@ -55,9 +50,6 @@ const App = () => {
           </Route>
           <Route path="/services">
             <Services />
-          </Route>
-          <Route path="/portfolio">
-            <Portfolio />
           </Route>
         </Switch>
       </main>

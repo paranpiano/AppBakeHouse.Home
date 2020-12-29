@@ -14,7 +14,7 @@ const ImageContents = (props) => {
   return (
     <div className="image-contents">
       <div className="image-bg-area" style={styles}>
-        {imageText}
+        {/* {imageText} */}
       </div>
       <div className="contents">{children}</div>
     </div>

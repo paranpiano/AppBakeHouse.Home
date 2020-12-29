@@ -2,7 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 import ImageContents from '../templates/ImageContents';
-import imagePath from '../../images/client.jpg';
+import imagePath from '../../images/clients.png';
 
 const Client = () => {
   const [client, setClient] = useState([]);
@@ -37,8 +37,8 @@ const Client = () => {
         </ul>
       </div> */}
       <div className="post">
-        <h2>Business To Business</h2>
-        <h2>Business To Customer</h2>
+        <h2>Clients</h2>
+        <h4>Easy to use technologies for clients.</h4>
       </div>
     </ImageContents>
   );
