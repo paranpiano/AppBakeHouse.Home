@@ -26,7 +26,7 @@ const Client = () => {
   };
 
   return (
-    <ImageContents imageSrc={imagePath} imageText="Clients">
+    <ImageContents imageSrc={imagePath}>
       {/* <div>
         <p onClick={getClient}>getClients</p>
         <p onClick={deleteClient}>deleteClients</p>

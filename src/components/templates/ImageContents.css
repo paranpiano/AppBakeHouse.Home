@@ -1,25 +1,20 @@
 .image-contents {
   display: block;
   width: 100%;
-  min-height: 100%;
+  height: auto;
   background-color: #131313;
-  margin: 2%;
+  margin: 20px;
 }
 
-.image-bg-area,
+.title-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
 .contents {
   display: block;
   width: 100%;
-  height: 50%;
-}
-
-.image-bg-area {
-  border-radius: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  background-size: 100% 100%;
-  font-size: 50px;
-  font-weight: bold;
+  height: auto;
 }

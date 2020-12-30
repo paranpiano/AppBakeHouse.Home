@@ -1,6 +1,6 @@
 main {
   display: flex;
   width: 100%;
-  min-height: 84%;
-  /* min-height: calc(100% - 56px); */
+  min-height: calc(100vh - 66px - 80px); /* 전체 height - 상단바 - 푸터 */
+  height: auto;
 }

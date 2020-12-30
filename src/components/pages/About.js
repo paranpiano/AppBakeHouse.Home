@@ -4,7 +4,7 @@ import './Pages.css';
 
 const About = () => {
   return (
-    <ImageContents imageSrc={imagePath} imageText="About Us">
+    <ImageContents imageSrc={imagePath}>
       <div className="post">
         <h2>Who We Are</h2>
         <h4>
