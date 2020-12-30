@@ -3,7 +3,7 @@ import imagePath from '../../images/services.png';
 
 const Services = () => {
   return (
-    <ImageContents imageSrc={imagePath} imageText="Services">
+    <ImageContents imageSrc={imagePath}>
       <div className="post">
         <h2>Mobile Apps</h2>
         <h4>
