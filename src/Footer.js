@@ -7,17 +7,14 @@ const Footer = () => {
       <Container>
         <div>
           <p>
-            © <span class="year">2021</span> Seoul Korea , paranpiano@appbakehouse.com
-          </p>
-          <p>
-            by{' '}
+            © <span class="year">2021</span> Seoul Korea , paranpiano@appbakehouse.com by
             <a
               href="https://www.linkedin.com/in/chajin-oh-3687a957/"
               title="Linkedin Profile"
               target="_blank"
               rel="noopener"
             >
-              paranpiano
+              {'   '}paranpiano
             </a>
           </p>
         </div>

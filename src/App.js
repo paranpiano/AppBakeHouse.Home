@@ -28,7 +28,7 @@ const App = () => {
               About Us
             </Nav.Link>
             <Nav.Link as={Link} to="/client">
-              Client
+              Clients
             </Nav.Link>
             <Nav.Link as={Link} to="/services">
               Services

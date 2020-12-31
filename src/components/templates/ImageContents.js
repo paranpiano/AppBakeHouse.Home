@@ -1,20 +1,12 @@
 import './ImageContents.css';
 
 const ImageContents = (props) => {
-  const {
-    imageSrc,
-    imageText,
-    children, // <ImageContents> children </ImageContents>
-  } = props;
-
-  const styles = {
-    backgroundImage: `url(${imageSrc})`,
-  };
+  const { imageSrc, children } = props;
 
   return (
-    <div className="image-contents">
-      <div className="image-bg-area" style={styles}>
-        {/* {imageText} */}
+    <div className="contents">
+      <div className="image-bg-area">
+        <img src={imageSrc} />
       </div>
       <div className="contents">{children}</div>
     </div>

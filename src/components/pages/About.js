@@ -1,5 +1,5 @@
 import ImageContents from '../templates/ImageContents';
-import imagePath from '../../images/about.png';
+import imagePath from '../../images/aboutus.png';
 import './Pages.css';
 
 const About = () => {
