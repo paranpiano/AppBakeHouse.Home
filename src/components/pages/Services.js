@@ -6,9 +6,10 @@ const Services = () => {
     <ImageContents imageSrc={imagePath} imageText="Services">
       <div className="post">
         <h2>Mobile Apps</h2>
+        <h3>- Android</h3>
         <h4>
           <a href="https://play.google.com/store/apps/details?id=com.appbakehouse.qr_scan_app">
-            DONUT - AI QR SCAN
+            DONUT - QR SCAN
           </a>
         </h4>
         <h4>
@@ -16,16 +17,8 @@ const Services = () => {
             BAGLE - AI WISH LIST
           </a>
         </h4>
-        <h4>
-          <a href="https://play.google.com/store/apps/details?id=com.crossbim.mobileviewer">
-            CROSSTEAM - FRONTEND DEVELOPMENT
-          </a>
-        </h4>
-        <h4>
-          <a href="">
-            REVIEWNOTE - BACKEND DEVELOPMENT(TBD)
-          </a>
-        </h4>
+        <h3>- iPhone</h3>
+
         <h2>Web Apps</h2>
         <h4>
           {/* <a href="https://play.google.com/store/apps/details?id=com.appbakehouse.qr_scan_app">

@@ -9,7 +9,7 @@ const About = () => {
         <h2>Who We Are</h2>
         <h4>
           We are a software development company, leader in IT consulting, custom software
-          development, testing, and machine learing.
+          development, testing, and machine learning.
         </h4>
         <h2>Our Mission</h2>
         <h4>

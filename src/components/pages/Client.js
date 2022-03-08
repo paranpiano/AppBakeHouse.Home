@@ -27,18 +27,20 @@ const Client = () => {
 
   return (
     <ImageContents imageSrc={imagePath} imageText="Clients">
-      {/* <div>
-        <p onClick={getClient}>getClients</p>
-        <p onClick={deleteClient}>deleteClients</p>
-        <ul>
-          {client.map((user) => (
-            <li>{user.name}</li>
-          ))}
-        </ul>
-      </div> */}
       <div className="post">
         <h2>Clients</h2>
-        <h4>Easy to use technologies for clients.</h4>
+        <h3>- Frontend</h3>
+        <h4>
+          <a href="https://play.google.com/store/apps/details?id=com.crossbim.mobileviewer">
+            CROSSTEAM - CONSTRUCTION COORDINATION APP
+          </a>
+        </h4>
+        <h3>- Backend</h3>
+        <h4>
+          <a href="https://play.google.com/store/apps/details?id=com.peapea.reviewnote.release">
+            REVIEWNOTE - IMPROVEMENT OF LEARNING PERFORMANCE APP
+          </a>
+        </h4>
       </div>
     </ImageContents>
   );
